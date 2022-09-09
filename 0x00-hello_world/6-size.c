@@ -2,11 +2,10 @@
 
 /**
  * main - entry point for the program
- *Description: Prints the size of different types the terminal
- *depending if it is 32-bit or 64-bit
+ * Description: Prints the size of different types the terminal
+ * depending if it is 32-bit or 64-bit
  * Return: 0
  */
-
 int main(void)
 {
 	printf("Size of char: %d byte(s)\n", sizeof(char));
