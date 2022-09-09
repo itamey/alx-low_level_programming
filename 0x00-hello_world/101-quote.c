@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-#include <unisd.h>
+#include <unistd.h>
 /**
  * main - main block
  * return: 1
