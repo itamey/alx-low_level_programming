@@ -2,8 +2,8 @@
 
 /**
  * main - entry of program
- * description:  print putchar
- * return: always success
+ * Description:  print _putchar
+ * Return: always success
  */
 
 int main(void)
