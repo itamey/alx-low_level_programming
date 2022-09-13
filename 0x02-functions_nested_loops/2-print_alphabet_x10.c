@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * print_alphabet - entry of program
+ * print_alphabet_x10 - entry of program
  * Description:  code for print alphabets
  * Return: no return value
  */
@@ -19,6 +19,6 @@ void print_alphabet_x10(void)
 			a++;
 		}
 		putchar('\n');
-		b++
+	b++
 	}
 }
