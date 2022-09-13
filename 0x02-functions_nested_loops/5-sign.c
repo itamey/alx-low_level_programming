@@ -3,8 +3,8 @@
 /**
  * print_sign - entry of program
  * Description:   print sign of values assigned
- * @c: the character code to evaluate
- * Return: returns - if it is below 
+ * @n: the character code to evaluate
+ * Return: returns - if it is below
  * 0 and 1 if it above zero
  * returns zero
  */
