@@ -2,7 +2,7 @@
 
 /**
  * main - entry of program
- * Description:  code print alphabet
+ * Description:  code for print alphabets
  * Return: no return value
  */
 
