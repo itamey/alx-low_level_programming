@@ -2,19 +2,19 @@
 
 /**
  * main - entry of program
- * Description:  print alphabets
- * Return: always success
+ * Description:  code print alphabet
+ * Return: no return value
  */
 
 void print_alphabet(void)
 {
 	char a = 'a';
 
-	while(a <= 'z')
+	while (a <= 'z')
 	{
 		putchar(a);
 		a++;
 	}
 
-	putchar('\n');	
+	putchar('\n');
 }
