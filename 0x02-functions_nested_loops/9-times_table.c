@@ -3,7 +3,7 @@
 /**
  * times_table- entry of program
  * Description: prints the 9x9 table
- * Return: void 
+ * Return: void
  */
 
 void times_table(void)
