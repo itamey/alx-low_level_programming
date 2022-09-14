@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_last_digit - entry of program
+ * jack_bauer - entry of program
  * Description: print out every minute of the day for jack bauer
  * Return: Void
  */
@@ -13,7 +13,7 @@ void jack_bauer(void)
 	while (a <= 2)
 	{
 		int b = 0;
-		
+	
 		while (b <= 9)
 		{
 			int c = 0;
