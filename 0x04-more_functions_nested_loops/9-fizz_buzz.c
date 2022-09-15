@@ -2,7 +2,7 @@
 
 /**
  * main - simple "fizz buzz" program
- *
+ * Description:  a simple buzz feed program
  * Return: void
  */
 
