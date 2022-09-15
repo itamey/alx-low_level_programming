@@ -2,17 +2,17 @@
 
 /**
  * print_line - entry of program
- * @a: number of times to print '_' character
+ * @n: number of times to print '_' character
  * Description: Prints '_' multiple. times to form a line
  * Return: Success
  */
 
-void print_line(int a)
+void print_line(int n)
 {
-	while (a > 0)
+	while (n > 0)
 	{
 		_putchar('_');
-		a++;
+		n++;
 	}
 	_putchar('\n');
 }
