@@ -3,7 +3,7 @@
 /**
  * _isdigit - entry of program
  * @c: value to be checked
- * Description: Checks for a ddigit and retirns 
+ * Description: Checks for a digit and retirns
  * 1 if c is a digit else 0 if other wise
  * using ASCII code
  * Return: 1 or 0
