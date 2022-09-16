@@ -18,7 +18,7 @@ void print_triangle(int size)
 		int i;
 
 		i = 1;
-		while (i < size)
+		while (i <= size)
 		{
 			int space = i;
 			int hash;
