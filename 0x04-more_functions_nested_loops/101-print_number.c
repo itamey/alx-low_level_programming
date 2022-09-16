@@ -30,30 +30,3 @@ void print_number(int n)
 		_putchar('0' + n);
 	}
 }
-
-/**
- * print_two_digits - prints two digit number to the screen
- * @n: Number to be printed
- *
- * Return: void
- */
-void print_rwo_digits(int n)
-{
-	int num1;
-	int num2;
-
-	num1 = n / 10;
-	num2 = n % 10;
-	if (n < 0)
-	{
-		num1 = -num1;
-		num2 = -num2;
-		_putchar('-');
-	}
-	_putchar('0' + num1);
-	_putchar('0' + num2);
-}
-
-/**
- * print_three
-
