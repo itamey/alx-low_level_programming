@@ -1,5 +1,5 @@
 #include "main.h"
-#include "9-strcpy.c"
+#include "2-strlen.c"
 
 /**
  * _strcat - adds the content of a string to another string
