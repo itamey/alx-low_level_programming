@@ -7,7 +7,7 @@
  * Return: @s or null depending on what character is found
  */
 
-char *_strchr(char *s, char c, unsigned int n)
+char *_strchr(char *s, char c)
 {
 	while (*s != '0')
 	{
