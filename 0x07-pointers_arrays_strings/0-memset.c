@@ -8,7 +8,7 @@
  * Return: @s
  */
 
-int _memset(char *s, char b, unsigned int n)
+int *_memset(char *s, char b, unsigned int n)
 {
 	unsigned int i;
 
