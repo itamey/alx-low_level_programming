@@ -42,6 +42,6 @@ int primenumber_check(int start, int n)
 	}
 	else
 	{
-		return (primenumber_checker(start + 1, n));
+		return (primenumber_check(start + 1, n));
 	}
 }
