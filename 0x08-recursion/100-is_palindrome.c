@@ -31,13 +31,13 @@ int palindrome_checker(char *s, int beg, int end)
 	{
 		return (1);
 	}
-	if ((*s + beg) != (*s + end))
+	if (*(s + beg) != *(s + end))
 	{
 		return (0);
 	}
 	else
 	{
-		return (palindrome_checker9(s, beg + 1, end - 1));
+		return (palindrome_checker(s, beg + 1, end - 1));
 	}
 }
 /**
