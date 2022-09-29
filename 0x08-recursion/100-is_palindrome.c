@@ -1,5 +1,4 @@
 #include "main.h"
-#include "2-strlen_recursion.c"
 
 int _strlen_recursion(char *);
 int palindrome_checker(char *, int, int);
