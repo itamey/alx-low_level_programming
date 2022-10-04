@@ -29,11 +29,11 @@ char *str_concat(char *s1, char *s2)
 	j = 0;
 	while (i < total_size)
 	{
-		if (i < size)
+		if (i < size1)
 		{
 			ptr[i] = s1[i];
 		}
-		else if (ii >= size)
+		else if (i >= size1)
 		{
 			ptr[i] = s2[j];
 			j++;
@@ -56,7 +56,7 @@ unsigned int get_length(char *str)
 	unsigned int length;
 	unsigned int i;
 
-	if (s == 0)
+	if (str	== 0)
 	{
 		return (0);
 	}
