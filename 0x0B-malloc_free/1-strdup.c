@@ -3,7 +3,7 @@
 unsigned int get_length(char *s);
 
 /**
- * _stdrup - copies the content of a string to another location in memory
+ * _strdup - copies the content of a string to another location in memory
  * @str: string to copy
  * Return: 0 or *ptr
  */
@@ -47,7 +47,6 @@ unsigned int get_length(char *s)
 
 	i = 0;
 	length = 0;
-	
 	while (s[i] != '\0')
 	{
 		length++;
