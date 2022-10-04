@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * create-array - creates an array of characters
+ * create_array - creates an array of characters
  * @size: number of elements in the array
  * @c: character used to set all the memory allocation in the created array
  * Return: 0 or *ptr
@@ -19,7 +19,7 @@ char *create_array(unsigned int size, char c)
 		{
 			return (0);
 		}
-		for (i = 0; i <size; i++)
+		for (i = 0; i < size; i++)
 		{
 			arr[i] = c;
 		}
