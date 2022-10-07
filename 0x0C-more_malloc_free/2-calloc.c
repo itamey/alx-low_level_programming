@@ -9,8 +9,8 @@
 
 void *_concat(unsigned int nmemb, unsigned int size)
 {
-	unsigned int i;
 	void *ptr;
+	unsigned int i;
 
 	if ((nmemb == 0) || (size == 0))
 	{
