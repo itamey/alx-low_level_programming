@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * _concat - uses malloc to assign dynamic memory for an array
+ * _calloc - uses malloc to assign dynamic memory for an array
  * @nmemb: array of elements
  * @size: size of each element of memory allocated
  * Return: ptr
  */
 
-void *_concat(unsigned int nmemb, unsigned int size)
+void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	void *ptr;
 	unsigned int i;
