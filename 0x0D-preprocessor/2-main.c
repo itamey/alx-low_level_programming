@@ -1,9 +1,10 @@
 #include <stdio.h>
 
 /**
- * main -prints the name of current file to the screen
+ * main - main entry point of the program
+ * Description: prints the name of current file to the screen
  * follow by a new line
- * Return : Always Success (0)
+ * Return: Always Success (0)
  */
 
 int main(void)
