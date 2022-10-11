@@ -1,32 +1,18 @@
 #include "dog.h"
-#include <stdio.h>
+#include <stdlib.h>
 
 /**
- * print_dog - prints out details of a struct to the screen
+ * free_dog - frees up a memory used by dynamically allocated struct
  * @d: pointer to an instance of structure dog
  * Return: void
  */
 
-void print_dog(struct dog *d)
+void free_dog(dog_t *d)
 {
 	if (d == NULL)
 		return;
 
-	if (d->name == NULL)
-	{
-		printf("Name: (nil)\n");
-	}
-	else
-	{
-		printf("Name: %s\n", d->name);
-	}
-	printf("Age: %0.6f\n", d->age);
-	if (d->owner == NULL)
-	{
-		printf("Owner: (nil)\n");
-	}
-	else
-	{
-		printf("Owner: %s\n", d->owner);
-	}
+	free (d->name);
+	free (d->owner);
+	free (d);
 }
