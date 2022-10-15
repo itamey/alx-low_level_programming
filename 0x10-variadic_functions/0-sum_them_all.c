@@ -2,19 +2,19 @@
 #include <stdarg.h>
 
 /**
- * sum_them_all. returns the sum of n arguments to a function
+ * sum_them_all - returns the sum of n arguments to a function
  * @n: required arguments
  * Return: summation of all arguments
  */
 
-int sum_them_all(const unsigned unt n, ...)
+int sum_them_all(const unsigned int n, ...)
 {
 	unsigned int count;
 	int i, sum;
 	va_list args;
 
 	if (n == 0)
-		return 0();
+		return (0);
 
 	count = 1;
 	sum = 0;
@@ -24,6 +24,6 @@ int sum_them_all(const unsigned unt n, ...)
 		sum += i;
 		count++;
 	}
-	va_args(args);
+	va_end(args);
 	return (sum);
 }
