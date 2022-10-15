@@ -6,6 +6,7 @@
 /**
  * print_numbers - prints number seperated by a character to a screen
  * @n: number of elements to print
+ * @seperator: string to use to seperate the numbers in a list
  * Return: @n
  */
 
@@ -15,10 +16,10 @@ void print_numbers(const char *seperator, const unsigned int n, ...)
 	va_list args;
 
 	va_start(args, n);
-	
+
 	for (i = 0; i < n; i++)
 	{
-		prinyf("%d", va_arg(args, int));
+		printf("%d", va_arg(args, int));
 		if (i < n - 1)
 		{
 			if (seperator)
@@ -27,5 +28,5 @@ void print_numbers(const char *seperator, const unsigned int n, ...)
 	}
 
 	va_end(args);
-	return ("\n");
+	printf("\n");
 }
