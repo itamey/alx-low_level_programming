@@ -1,26 +1,24 @@
 #include "main.h"
-#include "2-strlen.c"
-
 /**
- * _strcat - adds the content of a string to another string
- * @dest: Destination string
- * @src: Source string
- * Return: dest
+ * _strcat - a function that concatenates two strings
+ * @dest: copy to
+ * @src: copy from
+ * Return: two concat strings
  */
 
 char *_strcat(char *dest, char *src)
 {
-	int initial_end;
-	int j;
 
-	initial_end = _strlen(dest);
-	j = 0;
-	while (src[j] != '\0')
+	int i, n;
+
+	for (i = 0; dest[i] != '\0'; i++)
 	{
-		dest[initial_end + j] = src[j];
-		j++;
-	}
-	dest[initial_end + j] = '\0';
 
+	}
+
+	for (n = 0; (dest[n + 1] = *src++) != '\0'; n++)
+	{
+
+	}
 	return (dest);
 }

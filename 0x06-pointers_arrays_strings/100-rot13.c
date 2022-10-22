@@ -1,35 +1,17 @@
-#include "main.h" 
-  
- /** 
-  * rot13 - encodes a string using the ROT13 system 
-  * @str: String to be encoded 
-  * 
-  * Return: Encoded string 
-  */ 
- char *rot13(char *str) 
- { 
-         int i, j; 
-         char *lookup; 
-  
-         lookup = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"; 
-         i = 0; 
-         while (str[i] != '\0') 
-         { 
-                 j = 0; 
-                 while (lookup[j] != '\0') 
-                 { 
-                         if (str[i] == lookup[j]) 
-                         { 
-                                 int index; 
-  
-                                 index = ((j + 13) % 26) + ((j / 26) * 26); 
-                                 str[i] = lookup[index]; 
-                                 break; 
-                         } 
-                         j++; 
-                 } 
-                 i++; 
-         } 
-  
-         return (str); 
- }
+#include "main.h"
+/**
+ * rot13 - encodes string using rot13
+ * @s: pointer to string
+ *
+ * Return: pointer to encoded string
+ */
+char *rot13(char *s)
+{
+	int stringCount, rotation;
+	char r1[] = {'a', 'b', 'c', 'd', 'e', 'f' 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'V', 'W', 'X', 'Y', 'Z'};
+	char r2[] = {'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M'};
+
+	for (stringCount = 0;
+
+
+		

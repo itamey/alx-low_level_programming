@@ -1,50 +1,28 @@
-#include "main.h"
-
-int get_length(char *);
+#include "main.h" 
 
 /**
- * _strncat - concatenates part of a string to another string
- * @dest: Target of concatenation
- * @src: Source of characters to concatenate
- * @n: Number of characters to concatenate
+ * strncat - function that concatenates two strings. 
+ * @dest: pointer to destination string
+ * @src: pointer to source string
+ * @n: number of byte to be concatenated
  *
- * Return: @dest
+ * Return: pointer to destination string
  */
 char *_strncat(char *dest, char *src, int n)
 {
-	int length;
-	int i;
-
-	length = get_length(dest);
-	i = 0;
-	while (src[i] != '\0' && i < n)
-	{
-		dest[length + i] = src[i];
-		i++;
-	}
-	dest[length + i] = '\0';
-
-	return (dest);
-}
-
-/**
- * get_length - returns the length of a string
- * @s: String whose length we are interested in determining
- *
- * Return: length of s
- */
-int get_length(char *s)
-{
-	int length;
-	int i;
+	int length, j;
+/* j is a counter for n byte of src to be concatenated */
+/* length = length of destination string */
 
 	length = 0;
-	i = 0;
-	while (s[i] != '\0')
+	while (dest[length] != '\0')
 	{
-		++length;
-		i++;
+		length++;
 	}
-
-	return (length);
+	for (j = 0; j < n && src[j] != '\0'; j++, length++)
+	{
+		dest[length] = src[j];
+	}
+	dest[length] = '\0';
+	return (dest);
 }
